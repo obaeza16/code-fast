@@ -14,6 +14,7 @@
 
 	<body>
 		<!-- This example requires Tailwind CSS v2.0+ -->
+		<!-- NAVIGATION BAR -->
 		<nav class="bg-gray-800">
 			<div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 				<div class="relative flex items-center justify-between h-16">
@@ -204,21 +205,85 @@
 			</div>
 		</nav>
 
-		<div class="bg-gray-800 h-5/6">
+		<!-- FIRST ROW -->
+		<div class="bg-gray-800 h-5/6 mb-40 px-20">
 			<div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-10 p-6">
-				<img class="float-right" src="http://placeskull.com/450/400" alt="placeholder">
+				<img
+					class="float-right"
+					src="http://placeskull.com/450/400"
+					alt="placeholder"
+				/>
 				<h1 class="text-white text-xl py-10 pl-3">Code Fast</h1>
 				<p class="text-white pb-10 w-1/2">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit
 					accusantium magnam, quasi deserunt voluptatibus!
 				</p>
 				<!-- h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg  hover:bg-indigo-800 -->
-				<button class="inline-flex items-center bg-blue-500 hover:bg-blue-700 focus:shadow-outline text-white font-bold h-12 px-6 w-99 py-2 rounded-full">
+				<button
+					class="inline-flex items-center bg-blue-500 hover:bg-blue-700 focus:shadow-outline text-white font-bold h-12 px-6 w-99 py-2 rounded-full"
+				>
 					Start Playing
-				<svg class="w-5 h-5 ml-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clipRule="evenodd" /><path fillRule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg>
+					<svg
+						class="w-5 h-5 ml-3 fill-current"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 20 20"
+						fill="currentColor"
+					>
+						<path
+							fillRule="evenodd"
+							d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+							clipRule="evenodd"
+						/>
+						<path
+							fillRule="evenodd"
+							d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+							clipRule="evenodd"
+						/>
+					</svg>
 				</button>
 			</div>
+		</div>
+
+		<!-- CARDS TITLES -->
+		<div class="flex items-center justify-center h-20 pt-20">
+			<h2>What is Code Fast?</h2>
+
+		</div>
+
+		<!-- CARDS ROW -->
+		<div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+			<!--Card 1-->
+			<div class="rounded overflow-hidden shadow-lg">
+			  <img class="w-full" src="./img/mountain.webp" alt="Mountain">
+			  <div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2">Mountain</div>
+				<p class="text-gray-700 text-base">
+				  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+				</p>
+			  </div>
 			</div>
+			<!--Card 2-->
+			<div class="rounded overflow-hidden shadow-lg">
+			  <img class="w-full" src="./img/river.jpg" alt="River">
+			  <div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2">River</div>
+				<p class="text-gray-700 text-base">
+				  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+				</p>
+			  </div>
+			</div>
+		
+			<!--Card 3-->
+			<div class="rounded overflow-hidden shadow-lg">
+			  <img class="w-full" src="./img/forest.jpg" alt="Forest">
+			  <div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2">Forest</div>
+				<p class="text-gray-700 text-base">
+				  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+				</p>
+			  </div>
+			</div>
+		  </div>
 		</div>
 	</body>
 </html>
