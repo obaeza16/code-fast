@@ -11,6 +11,15 @@ Document
 Use a better box model (opinionated).
 */
 
+/* ADDED BY ÓSCAR BAEZA */
+hr::after {
+  background-color: var(--bg);
+  content: attr(data-hr-content);
+  padding: var(--p);
+  position: absolute;
+  transform: translate(var(--trans-x), var(--trans-y));
+}
+
 *,
 *::before,
 *::after {
